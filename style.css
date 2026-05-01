@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.quiz-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.progress {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.answer-btn {
+  padding: 15px 20px;
+  border: 2px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.answer-btn:hover {
+  background: #e9ecef;
+  border-color: #667eea;
+}
+
+.answer-btn.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+#next-btn, .btn-restart {
+  background: #667eea;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#next-btn:hover:not(:disabled), .btn-restart:hover {
+  background: #764ba2;
+}
+
+#next-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.score-container {
+  text-align: center;
+}
+
+.score-container h2 {
+  color: #667eea;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.score-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#final-score {
+  font-weight: bold;
+  color: #667eea;
+  font-size: 24px;
+}
+
+#score-message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px !important;
+  font-style:;
+}
