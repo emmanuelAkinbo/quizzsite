@@ -1,0 +1,23 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 10;
+    background-color: ;
+
+
+    
+}
+.image{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: blue;
+    font-size: 20;
+    text-align: center;
+}
+.name{
+text-align: center;
+}
